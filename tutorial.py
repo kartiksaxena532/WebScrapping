@@ -13,7 +13,8 @@ WebDriverWait(driver,5).until(
 )
 element = driver.find_element(By.CSS_SELECTOR, "textarea.gLFyf")
 element.send_keys("hi mom"+Keys.RETURN)
-movie=driver.find_element(By.CLASS_NAME, "EKtkFWMYpwzMKOYr0GYm LQVY1Jpkk8nyJ6HBWKAk").click()
-movie2=driver.find_element(By.CSS_SELECTOR, "video.jw-video jw-reset").click()
-
+link= driver.find_element(By.PARTIAL_LINK_TEXT, "IMDb")
+link.click()
+linkRate= driver.find_element(By.LINK_TEXT, "Comedy")
+linkRate.click()
 time.sleep(10)
